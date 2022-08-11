@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  background-color: grey;
+}
+
+.menu {
+  padding: 20px;
+  min-width: 20%;
+  max-width: 180px;
+  background-color: rgba(18, 18, 18, 0.9);
+  height: 100vh;
+}
+
+.menu ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 30px;
+}
+
+.menu ul li a {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+/* MENU MOBILE */
+
+#menu-mobile{
+  display: none;
+  border-radius: 7px;
+  border: 2px solid #ccc;
+  background: rgb(12, 12, 12);
+  padding: 8px;
+  width: 50px;
+  height: 50px;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+@media (max-width: 860px){
+  .menu {
+    max-width: 95%;
+    backdrop-filter: blur(6px);
+  }
+
+
+  #menu-mobile{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: block;
+      flex-direction: column;
+      cursor: pointer;
+  }
+
+  #menu-mobile .mb-ico{
+      position: absolute;
+      display: block;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      color: #ccc;
+      height: 2px;
+      border-top: 3px solid currentColor;
+      transition: all 0.6s ease;
+  }
+
+  #menu-mobile:hover .mb-ico{
+      color: var(--default-color);
+  }
+
+  #menu-mobile .mb-ico::after, #menu-mobile .mb-ico::before{
+      content: '';
+      display: block;
+      width: 30px;
+      height: 1px;
+      margin-top: 5px;
+      background-color: currentColor;
+      border-top: 2px solid currentColor;
+  }
+  
+  #menu{
+      display: block; 
+      position: absolute;
+      width: 95%;
+      top: 60px;
+      left: 10px;
+      border-radius: 10px;
+      height: 0;
+      transition: all 0.6s ease-in-out;
+      visibility: hidden;
+      overflow: hidden;
+  }
+
+  #menu ul{
+      display: block;
+      width: 100%;
+  }
+
+  #menu ul a{
+      padding: 10px 20px;
+      width: 100%;
+  }
+
+  #menu ul li a::before{
+      transition: all 1s ease;
+  }
+
+  #menu.active{
+      visibility: visible;
+      display: flex;
+      height: calc(100vh - 75px);
+  }
+
+  .formulario{
+    margin: 40px 0 !important;
+  }
+
+}
+
+.container {
+  padding: 0 2%;
+  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.formulario {
+  max-width: 600px;
+  min-width: 400px;
+  text-align: center;
+  margin: 10px 0;
+  width: 100%;
+  background-color: grey;
+  border-radius: 20px;
+  background: rgba(18, 18, 18, 0.7);
+  padding: 15px;
+}
+
+.formulario h2 {
+  width: 100%;
+  background-color: rgba(18, 18, 18, 0.7);
+  border-radius: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.formulario h3 {
+  color: white;
+}
+
+.formulario form label {
+  color: white;
+}
+
+.formulario form input{
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  width: 90%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.formulario form input[type="submit"] {
+  color: white;
+  width: 40%;
+  font-size: 30px;
+  background: rgba(18, 18, 18, 0.7);
+}
+
+.tabela table{
+  margin-top: 10px;
+  color: white;
+}
+
+.search-form {
+  margin: 20px 0;
+}
+
+.search-form .campo-busca {
+  width: 100%;
+}
+
+.search-form form {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  outline: none;
+  border: none;
+  padding: 0 20px;
+  height: 40px;
+  width: 70%;
+  border-radius: 20px;
+}
+
+.search-form input[type="submit"] {
+  background: rgba(18, 18, 18, 0.7);
+  border: none;
+  font-size: 20px !important;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.alterar-valor input[type="text"] {
+  height: 35px;
+  outline: none;
+  border: none;
+  background: #ccc;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0 20px;
+  width: 35% !important;
+}
+
+.alterar-valor input[type="submit"] {
+  background: rgba(18, 18, 18, 0.7);
+  border: none;
+  font-size: 15px !important;
+  padding: 10px;
+  border-radius: 15px;
+}
