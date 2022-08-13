@@ -13,6 +13,8 @@
         <li><a href="alterar-qtdade.php">Alterar Quantidade</a></li>
         <li><a href="deletar-produto.php">Deletar Produto</a></li>
       </ul>
+      <span>Selecione uma cor de fundo:</span>
+      <input class="color-picker" type="color" />
   
     </nav>
 
