@@ -3,7 +3,6 @@ const btnMobile = document.getElementById("menu-mobile");
 const color = document.querySelector(".color-picker");
 
 color.addEventListener("change", function () {
-  console.log(color.value);
   document.body.style.setProperty("--bg", color.value);
 });
 
