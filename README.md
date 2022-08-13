@@ -49,6 +49,14 @@
 
 ![image](https://user-images.githubusercontent.com/62979168/184464888-c8751e86-9d0b-4d89-aac8-fbd6bf9f9411.png)
 
+## Outras funcionalidades
+<strong>Atualização: Cor de Fundo</strong>
+<p> Agora é possível trocar a cor do fundo em tempo real pelo menu, basta que o usuário escolha a cor desejada. </p>
+
+![image](https://user-images.githubusercontent.com/62979168/184465641-ea8b6e6a-93c0-46bf-bee2-386d6e47ae2a.png)
+
+
+
 ## Utilizado neste projeto:
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
